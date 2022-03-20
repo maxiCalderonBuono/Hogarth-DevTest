@@ -1,0 +1,62 @@
+.hero-image {
+  min-width: 100%;
+  width: 100% !important;
+  background-position: center !important;
+  margin: 0;
+}
+
+
+.hero-space-exploration .hero-image {
+ width: 1440px;
+  height: 960px;
+  background-size: 1440px 960px;
+  background-repeat: no-repeat;
+  background-image: url(/images/final-frontier_large.jpg);
+}
+
+@media only screen and (min-width: 1441px) {
+  .hero-space-exploration .hero-image {
+    background-size: cover;
+    background-position: 50%;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi),
+  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 1.5dppx) {
+  .hero-space-exploration.hero-image {
+    background-image: url(/images/final-frontier_large_2x.jpg);
+  }
+}
+@media only screen and (max-width: 1068px) {
+  .hero-space-exploration .hero-image {
+    width: 1068px;
+    height: 712px;
+    background-size: 1068px 712px;
+    background-repeat: no-repeat;
+    background-image: url(/images/final-frontier_medium.jpg);
+  }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+  only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+  .hero-space-exploration .hero-image {
+    background-image: url(/images/final-frontier_medium_2x.jpg);
+  }
+}
+@media only screen and (max-width: 735px) {
+  .hero-space-exploration .hero-image {
+    width: 735px;
+    height: 490px;
+    background-size: 735px 490px;
+    background-repeat: no-repeat;
+    background-image: url(/images/final-frontier_small.jpg);
+  }
+}
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
+  only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+  .hero-space-exploration .hero-image {
+    background-image: url(/images/final-frontier_small_2x.jpg);
+  }
+}
