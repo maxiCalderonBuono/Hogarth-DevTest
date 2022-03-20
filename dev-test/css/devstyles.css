@@ -1,6 +1,9 @@
+/* Hero Section */
+/* Exercise 1 */
 .bg-center {
   background-position: center;
 }
+
 .hero-space-exploration .hero-image {
   width: 1440px;
   height: 960px;
@@ -13,7 +16,7 @@
 .hero-link:hover {
   color: #fff;
   text-decoration: none;
-}
+} 
 
 @media only screen and (min-width: 1441px) {
   .hero-space-exploration .hero-image {
@@ -62,6 +65,9 @@
   }
 }
 
+/* Timeline Section */
+/*Exercise 2 */
+
 @media only screen and (min-width: 1200px) {
 
     .card-3{
@@ -98,3 +104,40 @@
         top: -246px;
     }
 }
+
+/* Gallery Section */
+/* Exercise 3 */
+
+/* For exircise 3, I made use of https://caniuse.com/css-grid. */ 
+
+/*Adapting gallery to IE11 */
+
+.gallery-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-third, .grid-two-third, .grid-half {
+  width: 100%;
+}
+
+
+@media only screen and (min-width: 735px) {
+
+.gallery-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
+ 
+ .grid-third {
+   width: 33%;
+ }
+ 
+ .grid-two-third {
+   width: 67%;
+ }
+
+ .grid-half{
+   width: 50%;
+ } }
