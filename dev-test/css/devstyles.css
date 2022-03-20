@@ -68,7 +68,10 @@
 /* Timeline Section */
 /*Exercise 2 */
 
-@media only screen and (min-width: 1200px) {
+/* First Approach 
+Change class card to col-12 col-lg-6 and class main to row in the html file */
+
+/*@media only screen and (min-width: 1200px) {
 
     .card-3{
         position: relative;
@@ -103,7 +106,39 @@
         position: relative;
         top: -246px;
     }
+} */
+
+/* ---- Final Solution ---- */
+
+.main{
+  display: flex;
+  flex-direction: column;
 }
+
+@media only screen and (min-width: 735px) {
+
+  .timeline {
+    height: 3000px;
+  }
+
+  .main {
+    flex-wrap: wrap;
+    height: 3000px;
+  }
+
+  .card {
+    width: 50%;
+    margin: 0px 15px;
+  }
+
+  .card:nth-child(2n + 1) {
+    order: 1;
+  }
+  .card:nth-child(2n + 2) {
+    order: 2;
+  }
+}
+
 
 /* Gallery Section */
 /* Exercise 3 */
