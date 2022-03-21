@@ -5,6 +5,9 @@
 /* Hero Section */
 /* Exercise 1 */
 
+/*This exercise makes use of Bootstrap´s classes to to accomplish the objective . 
+So take a look at the html file */
+
 .bg-center {
   background-position: center;
 }
@@ -74,7 +77,8 @@
 /*Exercise 2 */
 
 /* First Approach 
-Change class card to col-12 col-lg-6 and class main to row in the html file.*/
+Change class "card" to "col-12 col-lg-6" and class "main" to "row" in the html file.
+Items 3,5,6 must keep class card-3, card-5, card-6 respectively*/
 
 /*@media only screen and (min-width: 1200px) {
 
