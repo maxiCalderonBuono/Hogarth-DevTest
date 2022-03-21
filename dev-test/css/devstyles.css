@@ -1,5 +1,10 @@
+*{
+  box-sizing: border-box;
+}
+
 /* Hero Section */
 /* Exercise 1 */
+
 .bg-center {
   background-position: center;
 }
@@ -69,7 +74,7 @@
 /*Exercise 2 */
 
 /* First Approach 
-Change class card to col-12 col-lg-6 and class main to row in the html file */
+Change class card to col-12 col-lg-6 and class main to row in the html file.*/
 
 /*@media only screen and (min-width: 1200px) {
 
@@ -128,7 +133,8 @@ Change class card to col-12 col-lg-6 and class main to row in the html file */
 
   .card {
     width: 50%;
-    margin: 0px 15px;
+    border-left: solid 15px #000;
+    border-right: solid 15px #000
   }
 
   .card:nth-child(2n + 1) {
